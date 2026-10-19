@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
        <title>Inventario</title> 
+       <link rel="stylesheet" href="estilos.css">
     </head>
 
     <body>
@@ -30,9 +31,21 @@
 
         <form>
             <br>
-            <label for="producto_input">Nombre del producto:</label>
+                <label for="producto_input">Nombre del producto:</label>
                 <br>
                 <input type="text" id="producto_input" name="nombre_producto" placeholder="Ingrese el producto">
+                <br>
+
+                <label for="cantidad_input">Cantidad:</label>
+                <br>
+                <input type="number" id="cantidad_input" name="cantidad" min="2" placeholder="10">
+                <br>
+
+                <label for="caducidad_input">Dias para caducar:</label>
+                <br>        
+                <input type="number" id="caducidad_input" name="dias_caducidad" min="1" placeholder="5">
+                <br>
+                <br>
                 <button type="submit"> Guardar </button>
         </form>
         <br>
