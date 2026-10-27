@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E3DEDE;
+    padding: 30px;
+}
+
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* --- VISTA DE EMPLEADO --- */
+.tarjeta-producto {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.botones-accion button {
+    flex: 1; 
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.botones-accion button {
+    flex: 1; 
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-venta { background-color: #28a745; } 
+.btn-merma { background-color: #dc3545; } 
+.btn-devolucion { background-color: #ffc107; color: #000; }
+
+.control-cantidad {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-cantidad {
+    width: 80px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 10px;
+}
