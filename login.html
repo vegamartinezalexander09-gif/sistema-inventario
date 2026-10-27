@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <title>Charly Cake</title>
+        <link rel="stylesheet" href="login.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <form name="form01" action="index.html" method="post">
+        
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" name="usuario" id="usuario">
+
+            <br>
+            <label for="contrasena">Contrasena:</label><br>
+            <input type="password" name="contrasena" id="contrasena">
+            <br>
+
+            <br>
+            <button id="btnEnviar" name="btnEnviar" type="submit">Iniciar sesion</button>
+            
+        </form>
+
+        <br>
+        <div name="resyltado" id="resultado"></div>
+
+        <script>
+
+            $('#btnEnviar').click(function(e) {
+                e.preventDefault();
+                
+                var usuario = $('#usuario').val();
+                var contrasena = $('#contrasena').val();
+                var resultado = $('#resultado');
+
+                if (usuario === "" || contrasena === "") {
+                    resultado.text("Por favor, complete todos los campos.");
+                } else {
+                    alert("Formulario enviado correctamente.");
+                }
+            });
+
+        </script>
+    </body>
+</html>
