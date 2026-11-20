@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6f9;
+    color: #3a2e42;
+    padding: 25px;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #6a3d9a;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #8c4a7b;
+    font-size: 18px;
+    margin: 25px 0 12px 0;
+    border-bottom: 2px solid #f0d9e7;
+    padding-bottom: 6px;
+}
+
+a {
+    color: #d65a8a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eedbe6;
+    margin: 25px 0;
+}
+
+/* Formularios administrativos */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #f2e1eb;
+    box-shadow: 0 4px 10px rgba(138, 86, 172, 0.06);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b5278;
+    display: block;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"],
+input[type="month"],
+select,
+textarea {
+    padding: 9px 12px;
+    border: 1px solid #dec7d8;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #a678de;
+    box-shadow: 0 0 0 3px rgba(166, 120, 222, 0.15);
+}
+
+textarea {
+    min-width: 240px;
+    height: 38px;
+    resize: vertical;
+}
+
+/* Botones principales */
+button {
+    padding: 10px 18px;
+    background-color: #8e6cef; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #7652d8;
+}
+
+/* Botones de sucursales*/
+.sucursales-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.sucursales-container button {
+    background-color: #e86f99;
+    padding: 15px 24px;
+    font-size: 15px;
+    box-shadow: 0 3px 8px rgba(232, 111, 153, 0.25);
+}
+
+.sucursales-container button:hover {
+    background-color: #d65582;
+}
+
+/* Tablas de inventario y reportes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(138, 86, 172, 0.06);
+    margin-bottom: 25px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f2e6ee;
+    font-size: 14px;
+}
+
+th {
+    background-color: #8e6cef; 
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Formularios dentro de tablas (Liquidar) */
+td form {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+td button {
+    background-color: #28a745;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+td button:hover {
+    background-color: #218838;
+}
